@@ -1,5 +1,6 @@
 package hibernate;
 
+import hibernate.entities.Client;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.SessionFactory;
 
@@ -9,7 +10,7 @@ public class HibernateUtil {
         try {
             sessionFactory = new Configuration().configure("/hibernate.cfg.xml").buildSessionFactory();
         } catch (Throwable ex) {
-            System.err.println("Initial SessionFactory creation failed.» + ex" +ex.getMessage());
+            System.err.println("Initial SessionFactory creation failed + ex" + ex.getMessage());
             throw new ExceptionInInitializerError(ex);
         }
     }

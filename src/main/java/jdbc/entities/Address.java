@@ -1,4 +1,4 @@
-package entities;
+package jdbc.entities;
 
 public class Address {
     private String city;
