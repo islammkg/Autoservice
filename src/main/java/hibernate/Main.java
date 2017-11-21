@@ -19,6 +19,7 @@ public class Main {
         m.getAddresses();
         System.out.println("Autos: ");
         m.getAutos();
+        System.exit(0);
     }
 
     public void getClients() {

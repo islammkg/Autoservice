@@ -12,12 +12,13 @@ public class DataReader {
     private List<Client> clients = new ArrayList<Client>();
     private List<Employer> employers = new ArrayList<Employer>();
 
+    private final String url = "jdbc:mysql://localhost:3306/autoservice";
+    private final String user = "root";
+    private final String password = "";
+
     public DataReader () {}
 
     public void readData() {
-        String url = "jdbc:mysql://localhost:3306/autoservice";
-        String user = "root";
-        String password = "";
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection = DriverManager.getConnection(url, user, password);
@@ -40,9 +41,6 @@ public class DataReader {
     }
 
     public void read() {
-        String url = "jdbc:mysql://localhost:3306/autoservice";
-        String user = "root";
-        String password = "";
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection = DriverManager.getConnection(url, user, password);
@@ -65,9 +63,6 @@ public class DataReader {
     }
 
     public void insert(Client client) {
-        String url = "jdbc:mysql://localhost:3306/autoservice";
-        String user = "root";
-        String password = "";
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection = DriverManager.getConnection(url, user, password);
